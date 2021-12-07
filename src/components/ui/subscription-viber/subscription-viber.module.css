@@ -1,0 +1,40 @@
+.viber__switch_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+  padding: 0 20px 10px;
+  border-bottom: 1.75px solid #f4f5f5;
+}
+
+.viber__image {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  color: black;
+  border-radius: 50%;
+  background: #9b51e0;
+}
+
+.viber__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 0;
+}
+
+.viber__text {
+  padding-left: 10px;
+}
+
+.viber__switch {
+  position: absolute;
+  right: 0;
+  display: flex;
+  padding-right: 20px;
+}

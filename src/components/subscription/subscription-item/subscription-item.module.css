@@ -1,0 +1,52 @@
+.subscription__form {
+  max-width: 264px;
+}
+
+.subscription__content {
+}
+
+.subscription__title {
+  margin: 0;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-bottom: 1px solid #D9DADC;
+}
+
+.subscription__switch_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 38px;
+  padding: 0 20px 10px;
+  border-bottom: 1.75px solid #F4F5F5;
+}
+
+.subscription__image {
+  background: #32415D;
+  border-radius: 50%;
+  color: black;
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.subscription__icon {
+  fill: currentColor;
+  height: 50%;
+  left: 50%;
+  position: absolute;
+  stroke: currentColor;
+  stroke-width: 0;
+  top: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subscription__text {
+  padding-right: 60px;
+  padding-left: 10px;
+}
+
+.subscription__switch {
+  display: flex;
+}

@@ -1,0 +1,24 @@
+.button {
+  cursor: pointer;
+  transition: all .3s ease-in;
+  border: none;
+  border-radius: 64px;
+  outline: none;
+}
+
+.button_type {
+  color: white;
+  background: linear-gradient(63.18deg, #3c1350 0%, #ff4c4c 100%);
+}
+
+.button_type:active {
+  opacity: 0.9;
+}
+
+.button_text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  padding: 10px 20px;
+}

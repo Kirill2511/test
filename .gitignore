@@ -111,7 +111,7 @@ dist
 
 # yarn v2
 .pnp.*
-.yarn/*
+!/.yarn/
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
@@ -126,3 +126,4 @@ dist
 *.iml
 out
 gen
+!/build/

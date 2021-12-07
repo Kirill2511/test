@@ -1,0 +1,36 @@
+:root {
+  --background: #1c1c21;
+  --background-alt: #131316;
+  --background-element: #2f2f37;
+
+  --colors-interface-error: #e52b1a;
+}
+
+/* Typography classes */
+
+.text {
+  margin: 0;
+  padding: 0;
+}
+
+.text_type_label_default {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.text_type_main-default {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.text_color_error {
+  color: var(--colors-interface-error);
+}
+
+.noselect {
+  user-select: none;
+}

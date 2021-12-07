@@ -1,0 +1,13 @@
+.menu_link {
+    display: flex;
+    text-decoration: none;
+    color: rgba(215, 34, 34, 0.85);
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.23;
+}
+
+.menu_link:hover {
+    color: #1e1e38;
+    cursor: pointer;
+}

@@ -7,7 +7,6 @@ type TInputInterface = {
   placeholder?: string;
   value?: string;
   name?: string;
-  success?: boolean;
   error?: boolean;
   disabled?: boolean;
   text?: string;
@@ -44,7 +43,6 @@ const Input = React.forwardRef<HTMLInputElement, TInputInterface>(
       value,
       name,
       text,
-      success,
       error,
       disabled,
       errorText,

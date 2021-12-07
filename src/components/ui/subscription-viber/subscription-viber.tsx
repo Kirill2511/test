@@ -24,6 +24,7 @@ const SubscriptionEmail = ({
           isOn={isOnViber}
           onColorBack="rgba(246, 23, 90, 0.2)"
           onColorFront="#F6175A"
+          id="switch-viber"
         />
       </div>
     </div>

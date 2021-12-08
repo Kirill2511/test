@@ -39,7 +39,7 @@ const PhoneNumberInput = ({
   return (
     <Input
       type="tel"
-      placeholder="Ваш телефон"
+      placeholder="Мобильный телефон"
       onChange={onChange}
       value={value}
       ref={inputRef}

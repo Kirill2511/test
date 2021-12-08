@@ -13,7 +13,7 @@ type TInputInterface = {
   errorText?: string;
   size?: "default" | "small";
   onChange(e: React.ChangeEvent<HTMLInputElement>): void;
-  onIconClick?(e: React.MouseEvent<HTMLDivElement>): void;
+  onTextClick?(e: React.MouseEvent<HTMLDivElement>): void;
   onBlur?(e?: React.FocusEvent<HTMLInputElement>): void;
   onFocus?(e?: React.FocusEvent<HTMLInputElement>): void;
 };
@@ -50,7 +50,7 @@ const Input = React.forwardRef<HTMLInputElement, TInputInterface>(
       onChange,
       onBlur,
       onFocus,
-      onIconClick,
+      onTextClick,
     },
     forwardRef
   ) => {
@@ -86,44 +86,44 @@ const Input = React.forwardRef<HTMLInputElement, TInputInterface>(
       (e?: React.MouseEvent<HTMLInputElement>) => {
         e.stopPropagation();
         if (typeof onItemClick === "function") {
-          onIconClick(e);
+          onTextClick(e);
         } else {
           forceFocus();
         }
       },
-      [onIconClick, forceFocus]
+      [onTextClick, forceFocus]
     );
 
-    const onIconClickProxy = useCallback(
+    const onTextClickProxy = useCallback(
       (e: React.MouseEvent<HTMLDivElement>) => {
         e.stopPropagation();
-        if (typeof onIconClick === "function") {
-          onIconClick(e);
+        if (typeof onTextClick === "function") {
+          onTextClick(e);
         } else {
           forceFocus();
         }
       },
-      [onIconClick, forceFocus]
+      [onTextClick, forceFocus]
     );
 
-    const iconToRender = useMemo(() => {
+    const textToRender = useMemo(() => {
       // eslint-disable-next-line import/namespace
       const Icon = text;
-      const hasAction = typeof onIconClick === "function";
+      const hasAction = typeof onTextClick === "function";
       const dumbIcon = disabled && !hasAction;
 
       return Icon ? (
         <div
-          className={clsx("input__icon", {
-            ["input__icon-action"]: hasAction,
-            ["input__icon-disabled"]: dumbIcon,
+          className={clsx("input__text", {
+            ["input__text-action"]: hasAction,
+            ["input__text-disabled"]: dumbIcon,
           })}
-          onClick={onIconClickProxy}
+          onClick={onTextClickProxy}
         >
           {text}
         </div>
       ) : null;
-    }, [text, onIconClickProxy, disabled, onIconClick]);
+    }, [text, onTextClickProxy, disabled, onTextClick]);
 
     const onWrapperClick = useCallback(() => {
       forceFocus();
@@ -182,7 +182,7 @@ const Input = React.forwardRef<HTMLInputElement, TInputInterface>(
             value={value}
             disabled={disabled}
           />
-          {iconToRender}
+          {textToRender}
         </div>
         {errorToRender}
       </div>

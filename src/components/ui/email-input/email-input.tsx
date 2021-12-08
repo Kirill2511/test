@@ -56,7 +56,7 @@ const EmailInput = ({
       name={name}
       error={error}
       disabled={fieldDisabled}
-      onIconClick={onIconClick}
+      onTextClick={onIconClick}
       errorText={"Ой, неверно введен Email!"}
       size={size}
     />

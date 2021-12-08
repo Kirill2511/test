@@ -45,6 +45,42 @@ const Subscription = () => {
         isOnViber={valueViber}
         onChangeViber={() => setValueViber(!valueViber)}
       />
+      <SubscriptionItem
+        title="Подписка 4"
+        nameEmail="Эл. почта"
+        isOnEmail={valueEmail}
+        onChangeEmail={() => setValueEmail(!valueEmail)}
+        nameTelegram="Telegram"
+        isOnTelegram={valueTelegram}
+        onChangeTelegram={() => setValueTelegram(!valueTelegram)}
+        nameViber="Viber"
+        isOnViber={valueViber}
+        onChangeViber={() => setValueViber(!valueViber)}
+      />
+      <SubscriptionItem
+        title="Подписка 5"
+        nameEmail="Эл. почта"
+        isOnEmail={valueEmail}
+        onChangeEmail={() => setValueEmail(!valueEmail)}
+        nameTelegram="Telegram"
+        isOnTelegram={valueTelegram}
+        onChangeTelegram={() => setValueTelegram(!valueTelegram)}
+        nameViber="Viber"
+        isOnViber={valueViber}
+        onChangeViber={() => setValueViber(!valueViber)}
+      />
+      <SubscriptionItem
+        title="Подписка 6"
+        nameEmail="Эл. почта"
+        isOnEmail={valueEmail}
+        onChangeEmail={() => setValueEmail(!valueEmail)}
+        nameTelegram="Telegram"
+        isOnTelegram={valueTelegram}
+        onChangeTelegram={() => setValueTelegram(!valueTelegram)}
+        nameViber="Viber"
+        isOnViber={valueViber}
+        onChangeViber={() => setValueViber(!valueViber)}
+      />
     </div>
   );
 };

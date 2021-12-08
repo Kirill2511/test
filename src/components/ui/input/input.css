@@ -21,11 +21,15 @@
     cursor: not-allowed;
 }
 
-.input__icon-action {
+.input__text {
+    color: #F6175A;
+}
+
+.input__text-action {
     cursor: pointer;
 }
 
-.input__icon-disabled {
+.input__text-disabled {
     cursor: not-allowed;
 }
 
@@ -91,7 +95,7 @@
 .input__error {
     margin-top: 2px;
     margin-left: 35px;
-    color: var(--colors-interface-error);
+    color: #e52b1a;
 }
 
 .input_size_default {

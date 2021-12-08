@@ -53,7 +53,7 @@ const PasswordInput = ({
       onFocus={onFocus}
       name={name}
       error={error}
-      onIconClick={onIconsClick}
+      onTextClick={onIconsClick}
       disabled={fieldDisabled}
       errorText={"Некорректный пароль"}
       size={size === "small" ? "small" : "default"}
